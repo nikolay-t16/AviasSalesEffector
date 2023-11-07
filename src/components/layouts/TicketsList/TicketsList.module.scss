@@ -1,0 +1,43 @@
+@import '../../../assets/scss/vars';
+
+.error {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+}
+
+.ticket {
+  @extend %contentContainer;
+  height: fit-content;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.buttonMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 2px solid $colorBlue;
+  height: 50px;
+  width: 100%;
+  margin: 15px auto;
+  max-width: 200px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: $colorBlue;
+  color: #ffffff;
+
+  &:hover, &:global(.focus-visible){
+    background-color: #ffffff;
+    color: $colorBlue;
+  }
+}
